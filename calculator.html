@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Calculator</title>
+        </head>
+
+        <body>
+            <div id="calculator">
+                <h1>Calculator</h1>
+                <form action="http://127.0.0.1/calculator/calculator.php" method="post" id="formular">
+                <p>
+                   x= <input type="number" name="x" id="x" required="required" value="<?php echo $x; ?>" />
+                </p>
+
+                <p>
+                   z= <input type="number" name="z" id="z" required="required" value="<?php echo $z; ?>" />
+                </p>
+
+                <label for="operator">Operator:</label>
+                <select name="operator" id="operator" required="required">
+                    <option value="+">Adunare</option>
+                    <option value="-">Scadere</option>
+                    <option value="%">Modulo</option>
+                    <option value="/">Impartire</option>
+                    <option value="**">Ridicare la putere</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Calculeaza">
+
+                </form>
+
+            </div>
+        </body>
+
+    </html>
